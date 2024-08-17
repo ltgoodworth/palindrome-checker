@@ -21,9 +21,11 @@ function getAnswer() {
       alert("Please input a value");
       return;
     } else if (textInput === reverseText) {
-    return result.innerText = `${originalText} is a palindrome.`;
+    result.innerText = `${originalText} is a palindrome.`;
+    return textField.value = "";
   } else if (textInput !== reverseText) {
-    return result.innerText = `${originalText} is not a palindrome.`;
+    result.innerText = `${originalText} is not a palindrome.`;
+    return textField.value = "";
   }
 }
 
